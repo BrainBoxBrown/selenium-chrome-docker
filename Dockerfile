@@ -17,8 +17,11 @@ RUN unzip chromedriver_linux64.zip
 RUN chmod a+x chromedriver
 RUN mv chromedriver /usr/bin
 
+
 RUN mkdir /src
 COPY . /src
+
+RUN chmod +x /src/browser.py
 
 RUN groupadd -r app && useradd -rm -g app app
 RUN chown -R app:app /src
