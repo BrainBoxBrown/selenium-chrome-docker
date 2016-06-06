@@ -5,6 +5,7 @@ Assuming you have docker installed and running
 
 ```
 git clone https://github.com/BrainBoxBrown/selenium-chrome-docker.git 
+cd selenium-chrome-docker
 ```
 
 Edit browser.py to do whatever you want to do and the run
