@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y \
 	python-pip \
-	phantomjs \
+	# phantomjs \
 	chromium-browser \
 	curl \
 	unzip \
@@ -35,4 +35,4 @@ USER app
 # Set cwd where CMD executes
 WORKDIR /src
 
-ENTRYPOINT ["/src/admin.py"]
+ENTRYPOINT ["/src/browser.py"]
